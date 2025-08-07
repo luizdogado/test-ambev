@@ -12,9 +12,7 @@ public class Product
 
     public string? Image { get; set; }
 
-    public int CategoryId { get; set; }
-
-    public Category? Category { get; set; }
+    public string Category { get; set; } = string.Empty;
 
     public Rating Rating { get; set; } = new();
 }
