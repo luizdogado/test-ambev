@@ -1,14 +1,14 @@
-﻿using Ambev.DeveloperEvaluation.Application.Products.Shared;
+using Ambev.DeveloperEvaluation.Application.Products.Shared;
 
-namespace Ambev.DeveloperEvaluation.WebApi.Features.Products.CreateProduct;
+namespace Ambev.DeveloperEvaluation.WebApi.Features.Products.UpdateProduct;
 
 /// <summary>
-/// Represents a request to create a new product in the system.
+/// Represents a request to update an existing product in the system.
 /// </summary>
-public class CreateProductRequest
+public class UpdateProductRequest
 {
     /// <summary>
-    /// Gets or sets the tittle.
+    /// Gets or sets the title.
     /// </summary>
     public string Title { get; set; } = string.Empty;
 

@@ -20,6 +20,7 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
 
         builder.HasOne(p => p.Rating)
             .WithOne(r => r.Product)
+            .HasForeignKey<Rating>(r => r.ProductId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }

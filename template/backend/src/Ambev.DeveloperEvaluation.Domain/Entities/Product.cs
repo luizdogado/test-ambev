@@ -14,5 +14,5 @@ public class Product
 
     public string Category { get; set; } = string.Empty;
 
-    public Rating Rating { get; set; } = new();
+    public Rating? Rating { get; set; }
 }
